@@ -22,7 +22,6 @@ for model_name in models:
     def load_and_process(path):
         df = pd.read_csv(path, index_col=0)
         df = df[df['Model'] == model_name]
-        counts = df['L1'].value_counts().sort_values().to_dict()
         # Normalize metrics and linguistic distance
         for metric in ["WER", "WIL", "SemDist"]:
             df[metric] = MinMaxScaler().fit_transform(df[[metric]])
