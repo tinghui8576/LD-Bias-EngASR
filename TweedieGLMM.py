@@ -165,5 +165,5 @@ for metric in metrics:
             title_fontsize=12, fontsize=11)
 
     plt.tight_layout()
-    plt.savefig(f"Plot/GLMMs_{metric}_LanguageDist_all_models.png", dpi=300, bbox_inches="tight")
+    plt.savefig(f"Plot/GLMMs_{metric}_LanguageDist_all_models.pdf", dpi=300, bbox_inches="tight")
     plt.show()

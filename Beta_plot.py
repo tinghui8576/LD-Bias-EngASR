@@ -239,7 +239,7 @@ def grouped_bar_plot(df, metrics):
     axes[2].legend(handles=legend_handles, title="Model",ncol=4, bbox_to_anchor=(-0.07, -0.2),columnspacing=0.8, handletextpad=0.4, title_fontsize=24,fontsize=23,loc='upper left')
 
     plt.tight_layout()
-    plt.savefig("Plot/beta.png")
+    plt.savefig("Plot/beta.pdf", dpi=300, bbox_inches="tight")
     plt.show()
 
 grouped_bar_plot(results_df, metrics)

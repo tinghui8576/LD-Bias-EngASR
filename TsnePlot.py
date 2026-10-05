@@ -355,7 +355,7 @@ for model, layer_indices in model_layers.items():
             cb.ax.legend(bbox_to_anchor=(0, row_idx * 0.1))
             cb.ax.set_title("", fontsize=30, fontweight='bold')
 
-    save_filename = f"Plot/Emb_combined/Tsne_Layer_{model}_new.png"
+    save_filename = f"Plot/Emb_combined/Tsne_Layer_{model}_new.pdf"
     fig.savefig(save_filename, dpi=100, bbox_inches="tight")
     print(f"Saved: {save_filename}")
     plt.close(fig) 
